@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
 
-    <section class="container-box">
+    <div class="teste">
+        <input id="inputhidden" type="hidden">
 
-        <header class="container-header">
-
-            <h1 class="header-titulo">minhas tarefas</h1>
-
-            <div class="header-buttons">
+        
+        <section class="container-box">
+            
+            <header class="container-header">
                 
-                <input type="text" class="header-input">
-                <button class="header-button">adicionar</button>
+                <h1 class="header-titulo">minhas tarefas</h1>
+                
+                <div class="header-conrainer-buttons">
+                    
+                    <input type="text" class="header-input" id="header-input">
+                    <img class="header-button" id="header-button" src="assets/icons8-check-64 (1).png" alt="">
+                    
+                </div>
+                
+            </header>
+            
+            <main id="container-main" class="container-main">
 
-            </div>
+            </main>
+        </section>
+    </div>
 
-        </header>
-
-        <main class="container-main">
-        </main>
-    </section>
-    
+    <script src="index.js"></script>
+        
 </body>
+
 </html>
