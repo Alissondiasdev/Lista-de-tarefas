@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,33 +17,43 @@
 
 <body>
 
-    <div class="teste">
+    
         <input id="inputhidden" type="hidden">
 
-        
+
+
         <section class="container-box">
-            
+
             <header class="container-header">
                 
-                <h1 class="header-titulo">minhas tarefas</h1>
-                
+
+                <h1 class="header-titulo">Minhas tarefas</h1>
+
                 <div class="header-conrainer-buttons">
-                    
-                    <input type="text" class="header-input" id="header-input">
-                    <img class="header-button" id="header-button" src="assets/icons8-check-64 (1).png" alt="">
-                    
+                    <input type="text" placeholder="Adicionar nova tarefa" class="header-input" id="header-input">
+
+
+                    <button onclick="criarTarefa()" class="header-button" id="header-button">Criar Tarefa</button>
+                    <button class="header-button" onclick="atualizarTarefa()">Atualizar Tarefa</button>
+
                 </div>
-                
+
             </header>
-            
-            <main id="container-main" class="container-main">
+
+            <main id="container__tarefas" class="container-main">
+
+
+
+
 
             </main>
+
+
         </section>
-    </div>
+    
 
     <script src="index.js"></script>
-        
+
 </body>
 
 </html>
