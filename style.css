@@ -1,12 +1,10 @@
 body {
-
     font-family: 'Montserrat', sans-serif;
     background-image: linear-gradient(to bottom, #1b43a6 0%, #1b43a6 20%, #fff 20%, #fff 100%);
     height: 100vh;
     display: flex;
     justify-content: center;
     padding-top: 40px;
-
 }
 
 *,
@@ -16,50 +14,30 @@ html {
     box-sizing: border-box;
 }
 
-
 .container-box {
     height: 700px;
     background-color: #fff;
     width: 1150px;
-
-
-
     border-radius: 20px;
-
     border: 1px solid rgb(255, 255, 255);
     -webkit-box-shadow: 4px 4px 12px -7px rgba(0, 0, 0, 0.61);
     -moz-box-shadow: 4px 4px 12px -7px rgba(0, 0, 0, 0.61);
     box-shadow: 4px 4px 12px -7px rgba(0, 0, 0, 0.61);
-
-
-
 }
-
-
-
-
-
 
 .container-header {
     display: flex;
     justify-content: space-around;
-    margin-top: 30px;
-
-
+    padding: 30px;
 }
 
 .header-conrainer-buttons {
     display: flex;
     align-items: center;
     gap: 20px;
-
-
-
-
 }
 
 .header-input {
-
     padding: 10px;
     width: 300px;
     border-radius: 5px;
@@ -68,60 +46,57 @@ html {
 }
 
 .header-button {
-
     cursor: pointer;
     border: none;
     background-color: #1b43a6;
     padding: 10px;
     border-radius: 5px;
     color: #fff;
-
+}
+.header-button-atualizar{
+    display: none;
+    cursor: pointer;
+    border: none;
+    background-color: #1b43a6;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
 }
 
 .container-main {
-
     margin: 0 auto;
     width: 750px;
-    height: 500px;
+    max-height: 500px;
     padding: 30px;
     margin-top: 30px;
     background-color: #fff;
     -webkit-box-shadow: 4px 4px 12px -7px rgba(0, 0, 0, 0.61);
     -moz-box-shadow: 4px 4px 12px -7px rgba(0, 0, 0, 0.61);
     box-shadow: 4px 4px 12px -7px rgba(0, 0, 0, 0.61);
-    overflow-y: scroll;
-
-
-
-
-
+    overflow-y: auto;
+    display: none;
+    
+  scroll-behavior: smooth;
 }
 
 .container-main::-webkit-scrollbar {
     width: 8px;
-    /* largura da barra de rolagem */
-
 }
 
 .container-main::-webkit-scrollbar-thumb {
     background-color: #ccc;
-
     border-radius: 5px;
     height: 10px;
-
 }
 
 .lista_tarefas {
     display: flex;
     position: relative;
     padding-bottom: 10px;
-
-
     border-bottom: 1px solid black;
     list-style: none;
     margin-top: 20px;
     gap: 10px;
-
 }
 
 .icone_editar,
@@ -131,13 +106,10 @@ html {
 
 .tarefa_criada_icones {
     display: flex;
-
     border: 1px solid red;
-
 }
 
 .container_icones {
     position: absolute;
     right: 0;
-
 }
